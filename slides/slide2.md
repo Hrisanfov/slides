@@ -14,4 +14,4 @@ The control plane can run:
 
 class: pic
 
-![Wow! Prometheus](images/joxi_screenshot_1560161466522.png)
+![Wow! Prometheus](https://github.com/Hrisanfov/slides/blob/master/images/joxi_screenshot_1560161466522.png?raw=true)
