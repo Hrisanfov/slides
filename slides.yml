@@ -1,0 +1,19 @@
+title: |
+  Kubernetes
+  for Admins and Ops
+#chat: "[Slack](https://dockercommunity.slack.com/messages/C7GKACWDV)"
+#chat: "[Gitter](https://gitter.im/jpetazzo/workshop-yyyymmdd-city)"
+chat: "In person!"
+
+gitrepo: github.com/jpetazzo/container.training
+
+slides: http://container.training/
+
+exclude:
+- self-paced
+- static-pods-exercise
+
+chapters:
+- slides/slide1.md
+- slides/slide1.md
+- slides/slide1.md
