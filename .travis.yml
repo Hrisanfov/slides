@@ -17,8 +17,8 @@ script:
   - ./build.sh once
 
 before_deploy:
-  - git config --local user.name "Hrisanfov"
-  - git config --local user.email "Ilya.Hrisanfov@gmail.com"
+  - git config --global user.name "Hrisanfov"
+  - git config --global user.email "Ilya.Hrisanfov@gmail.com"
 deploy:
   provider: releases
   api_key: "f6e8e80f64ed8c972a4a7eeb5e0f84b9ca4850b1"
