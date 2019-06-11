@@ -21,5 +21,3 @@ deploy:
   file: slides.yml.html
   skip_cleanup: true
   overwrite: true
-  on:
-    tags: true  
