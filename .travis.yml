@@ -15,4 +15,11 @@ script:
   - chmod +x *.sh
   - chmod +x *.py
   - ./build.sh once
-
+  
+deploy:
+  provider: releases
+  file: slides.yml.html
+  skip_cleanup: true
+  overwrite: true
+  on:
+    tags: true  
