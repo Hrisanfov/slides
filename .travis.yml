@@ -1,6 +1,6 @@
 Language: python
 python: 
-  - "3.3"
+  - "3.6"
 os:
   - linux
 
@@ -8,8 +8,8 @@ env:
   - num=1
 
 install:
-  - pip install --upgrade pip
-  - pip install Jinja2
+  - pip install --upgrade pip --user Hrisanfov
+  - pip install Jinja2 --user Hrisanfov
 
 script:
   - chmod +x *.sh
