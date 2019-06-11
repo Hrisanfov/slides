@@ -1,8 +1,12 @@
+Language: python
 os:
   - linux
 
 env:
   - num=1
+
+install:
+  - pip install Jinja2
 
 script:
   - chmod +x *.sh
