@@ -10,8 +10,9 @@
 
 ## Test article 
 
+.exercise[
   ```bash
      script example
   ```
-
+]
 ---
