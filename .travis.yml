@@ -5,9 +5,8 @@ env:
   - num=1
 
 script:
-  - mkdir slides$num
-  - cd slides$num
+  - cd slides
   - chmod +x *.sh
   - chmod +x *.py
   - ./build.sh once
-  - cp slides.yml.html /var/www/html
+#  - cp slides.yml.html /var/www/html
