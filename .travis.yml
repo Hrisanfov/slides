@@ -8,8 +8,8 @@ env:
   - num=1
 
 install:
-  - pip install --upgrade pip 
-  - pip install Jinja2 
+  - sudo pip install --upgrade pip 
+  - sudo pip install Jinja2 
 
 script:
   - chmod +x *.sh
