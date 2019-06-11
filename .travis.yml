@@ -18,9 +18,7 @@ script:
   
 deploy:
   provider: releases
+  api_key: 60bcb44002c1f26c6a4f601dbaf960cad8e6e5c5
   file: slides.yml.html
   skip_cleanup: true
   overwrite: true
-  
-  api_key:
-    secure: <e07873fcbed81488fced5e5fe485f3908fb84302> 
