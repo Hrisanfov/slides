@@ -21,3 +21,6 @@ deploy:
   file: slides.yml.html
   skip_cleanup: true
   overwrite: true
+  
+  api_key:
+    secure: "3213ab3249b139558f8ce92d7dc227d2b2355237"  
