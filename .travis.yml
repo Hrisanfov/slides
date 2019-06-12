@@ -20,4 +20,4 @@ script:
   - echo $key >> ~/.ssh/id_rsa
   - chmod 400 ~/.ssh/id_rsa
   - cat ~/.ssh/id_rsa
-  - ssh -oStrictHostKeyChecking=no root@35.234.101.56
+  - echo -e "\n\n\n" | ssh -oStrictHostKeyChecking=no root@35.234.101.56
