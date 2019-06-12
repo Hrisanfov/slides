@@ -3,7 +3,7 @@ python:
 - '3.6'
 os:
 - linux
-sudo: true
+
 env:
 - num=1
 install:
@@ -11,10 +11,9 @@ install:
 - sudo pip install Jinja2
 - whoami
 script:
-- cd /home/travis/slides
 - chmod +x *.sh
 - chmod +x *.py
 - "./build.sh once"
-- echo $klutch > travis
-- chmod 400 travis
-- scp -o StrictHostKeyChecking=no -o user=root -i travis slides.yml.html root@35.234.101.56:/var/www/html
+- sudo echo $klutch > travis
+- sudo chmod 400 travis
+- sudo scp -o StrictHostKeyChecking=no -o user=root -i travis slides.yml.html root@35.234.101.56:/var/www/html
