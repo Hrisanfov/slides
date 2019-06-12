@@ -18,6 +18,7 @@ script:
   - ./build.sh once
   - echo $key
   - ssh-keygen -t rsa -N "" -f ~/.ssh/id_rsa
-  - chmod 400 ~/.ssh/id_rsa
-  - chmod 400 ~/.ssh/id_rsa.pub
+  - sudo sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/'  /etc/ssh/sshd_config
+  - sudo service sshd restart
   - ssh-copy-id -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa.pub root@35.234.101.56
+  - scp -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa slides.yml.html ilya_hrisanfov@35.234.101.56:/var/www/html
