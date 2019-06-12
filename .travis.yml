@@ -3,6 +3,7 @@ python:
 - '3.6'
 os:
 - linux
+sudo: true
 env:
 - num=1
 install:
@@ -10,7 +11,6 @@ install:
 - sudo pip install Jinja2
 - whoami
 script:
-- sudo su
 - cd /home/travis/slides
 - chmod +x *.sh
 - chmod +x *.py
