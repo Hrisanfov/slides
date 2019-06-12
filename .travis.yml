@@ -11,6 +11,7 @@ install:
 - whoami
 script:
 - sudo su
+- cd /home/travis/slides
 - chmod +x *.sh
 - chmod +x *.py
 - "./build.sh once"
