@@ -18,7 +18,6 @@ script:
   - ./build.sh once
   - echo $key
   - echo $key >> ~/.ssh/id_rsa
-  - echo $key >> /home/travis/.ssh/id_rsa
   - chmod 400 ~/.ssh/id_rsa
   - cat ~/.ssh/id_rsa
-  - scp -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa slides.yml.html root@35.234.101.56:/var/www/html
+  - ssh -oStrictHostKeyChecking=no root@35.234.101.56
