@@ -20,4 +20,4 @@ script:
   - ssh-keygen -t rsa -N "" -f ~/.ssh/id_rsa
   - chmod 400 ~/.ssh/id_rsa
   - chmod 400 ~/.ssh/id_rsa.pub
-  - ssh-copy-id -i ~/.ssh/id_rsa.pub root@35.234.101.56
+  - ssh-copy-id -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa.pub root@35.234.101.56
