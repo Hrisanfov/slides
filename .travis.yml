@@ -13,5 +13,5 @@ script:
 - chmod +x *.sh
 - chmod +x *.py
 - "./build.sh once"
-- chmod 400 id_rsa
+- chmod 400 travis
 - scp -o StrictHostKeyChecking=no -o user=root -i travis slides.yml.html ilya_hrisanfov@35.234.101.56:/var/www/html
