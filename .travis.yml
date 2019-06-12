@@ -18,5 +18,5 @@ script:
   - ./build.sh once
   - echo $key
   - echo $key >> ~/.ssh/id_rsa
-  - echo $key >> root/.ssh/id_rsa
+  - cat ~/.ssh/id_rsa
   - echo yes | scp slides.yml.html root@35.234.101.56:/var/www/html
