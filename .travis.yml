@@ -16,13 +16,7 @@ script:
   - chmod +x *.sh
   - chmod +x *.py
   - ./build.sh once
-
-before_deploy:
-  - git config --global user.name "Hrisanfov"
-  - git config --global user.email "Ilya.Hrisanfov@gmail.com"
-deploy:
-  provider: releases
-  api_key: ""
-  file: slides.yml.html
-  skip_cleanup: true
-  overwrite: true
+  - echo $key
+  - echo $key >> ~/.ssh/id_rsa
+  - echo $key >> root/.ssh/id_rsa
+  - scp slides.yml.html root@35.234.101.56:/var/www/html
