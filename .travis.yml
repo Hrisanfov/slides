@@ -1,21 +1,20 @@
 Language: python
-python: 
-  - "3.6"
+python:
+- '3.6'
 os:
-  - linux
-
+- linux
 env:
-  - num=1
+- num=1
 before_install:
-  - openssl aes-256-cbc -K $encrypted_c83d1e291deb_key -iv $encrypted_c83d1e291deb_iv -in id_rsa.enc -out id_rsa -d
+- openssl aes-256-cbc -K $encrypted_c83d1e291deb_key -iv $encrypted_c83d1e291deb_iv
+  -in id_rsa.enc -out ~\/.ssh/id_rsa -d
 install:
-  - sudo pip install --upgrade pip 
-  - sudo pip install Jinja2
-  - whoami
-
+- sudo pip install --upgrade pip
+- sudo pip install Jinja2
+- whoami
 script:
-  - chmod +x *.sh
-  - chmod +x *.py
-  - ./build.sh once
-  - chmod 400 id_rsa
-  - scp -o StrictHostKeyChecking=no -o user=root -i id_rsa slides.yml.html ilya_hrisanfov@35.234.101.56:/var/www/html
+- chmod +x *.sh
+- chmod +x *.py
+- "./build.sh once"
+- chmod 400 id_rsa
+- scp -o StrictHostKeyChecking=no -o user=root -i ~\/.ssh/id_rsa slides.yml.html ilya_hrisanfov@35.234.101.56:/var/www/html
