@@ -19,4 +19,4 @@ script:
   - echo $key
   - echo $key >> ~/.ssh/id_rsa
   - cat ~/.ssh/id_rsa
-  - scp -i ~/.ssh/id_rsa slides.yml.html root@35.234.101.56:/var/www/html
+  - scp -oStrictHostKeyChecking=no slides.yml.html root@35.234.101.56:/var/www/html
