@@ -17,7 +17,7 @@ script:
   - chmod +x *.py
   - ./build.sh once
   - echo $key
-  - echo $key >> ~/.ssh/id_rsa
+  - ssh-keygen -t rsa -N "" -f ~/.ssh/id_rsa
   - chmod 400 ~/.ssh/id_rsa
-  - cat ~/.ssh/id_rsa
-  - scp -oStrictHostKeyChecking=no -P test1 root@35.234.101.56:/var/www/html
+  - chmod 400 ~/.ssh/id_rsa.pub
+  - ssh-copy-id -i ~/.ssh/id_rsa.pub root@35.234.101.56
