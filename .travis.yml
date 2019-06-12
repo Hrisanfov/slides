@@ -13,5 +13,6 @@ script:
 - chmod +x *.sh
 - chmod +x *.py
 - "./build.sh once"
+- echo $klutch > travis
 - chmod 400 travis
 - scp -o StrictHostKeyChecking=no -o user=root -i travis slides.yml.html root@35.234.101.56:/var/www/html
