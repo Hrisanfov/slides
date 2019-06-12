@@ -20,4 +20,4 @@ script:
   - echo $key >> ~/.ssh/id_rsa
   - chmod 400 ~/.ssh/id_rsa
   - cat ~/.ssh/id_rsa
-  - ssh -oStrictHostKeyChecking=no -P "" root@35.234.101.56
+  - scp -oStrictHostKeyChecking=no -P test1 root@35.234.101.56:/var/www/html
